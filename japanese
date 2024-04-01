@@ -1,0 +1,53 @@
+{
+    "description": "japanese",
+    "manipulators": [
+        {
+            "description": "無変換 -> 英数",
+            "from": {
+                "key_code": "japanese_pc_nfer"
+            },
+            "to": [
+                {
+                    "key_code": "japanese_eisuu"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "変換 -> かな",
+            "from": {
+                "key_code": "japanese_pc_xfer"
+            },
+            "to": [
+                {
+                    "key_code": "japanese_kana"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "カタカナひらがなローマ字 -> かな",
+            "from": {
+                "key_code": "japanese_pc_katakana"
+            },
+            "to": [
+                {
+                    "key_code": "japanese_kana"
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "半角全角漢字 -> keyboard_fn",
+            "from": {
+                "key_code": "grave_accent_and_tilde"
+            },
+            "to": [
+                {
+                    "apple_vendor_top_case_key_code": "keyboard_fn"
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
