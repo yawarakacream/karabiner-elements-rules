@@ -1,0 +1,42 @@
+{
+    "description": "print_screen",
+    "manipulators": [
+        {
+            "description": "print_screen -> left_command + left_shift + 4",
+            "from": {
+                "key_code": "print_screen"
+            },
+            "to": [
+                {
+                    "key_code": "4",
+                    "modifiers": [
+                        "left_command",
+                        "left_shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        },
+        {
+            "description": "left_command + print_screen -> left_command + left_shift + 5",
+            "from": {
+                "key_code": "print_screen",
+                "modifiers": {
+                    "mandatory": [
+                        "left_command"
+                    ]
+                }
+            },
+            "to": [
+                {
+                    "key_code": "5",
+                    "modifiers": [
+                        "left_command",
+                        "left_shift"
+                    ]
+                }
+            ],
+            "type": "basic"
+        }
+    ]
+}
